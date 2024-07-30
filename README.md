@@ -7664,7 +7664,7 @@ It was recorded using [OBS Studio](https://obsproject.com/). Trimmed to the same
 This was then converted to the image using the [FFmpeg](https://www.ffmpeg.org/download.html) command:
 
 ```
-ffmpeg -i untitled.mkv -vf "crop=700:700:(in_w-700)/2:(in_h-700)/2, fps=60" -loop 0 -quality 100 -compression_level 0 -y chatbot_600x600.webp
+ffmpeg -i untitled.mkv -vf "crop=700:700:(in_w-700)/2:(in_h-700)/2, fps=60" -loop 0 -quality 100 -compression_level 0 -y chatbot_700x700.webp
 
 ```
 
