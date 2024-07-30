@@ -1,6 +1,7 @@
 Hi All,<br><br>
 I thought I'd upload what I have been working on recently on Home Assistant ! Hopefully it gives you an idea of what I've done and how you can use it yourself if interested.
 <br>
+<br>
 
 # Theme
 
@@ -7660,7 +7661,7 @@ I edited it to the following:
 
 It was recorded using [OBS Studio](https://obsproject.com/). Trimmed to the same point in the animation, so one loop was completed. It was exported as `untitled.mkv`.
 
-This was then converted to the image using the FFMpeg command:
+This was then converted to the image using the [FFmpeg](https://www.ffmpeg.org/download.html) command:
 
 ```
 ffmpeg -i untitled.mkv -vf "crop=700:700:(in_w-700)/2:(in_h-700)/2, fps=60" -loop 0 -quality 100 -compression_level 0 -y chatbot_600x600.webp
